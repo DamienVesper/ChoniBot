@@ -1,0 +1,49 @@
+{
+  "name": "chonibot",
+  "version": "1.0.0",
+  "description": "A Discord bot. For what? Shall see, you will.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "express --view=pug _site",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienVesper/ChoniBot.git"
+  },
+  "keywords": [
+    "choni",
+    "smite",
+    "discord-bot"
+  ],
+  "author": "DamienVesper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamienVesper/ChoniBot/issues"
+  },
+  "homepage": "https://github.com/DamienVesper/ChoniBot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cookie-parser": "^1.4.4",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "events": "^3.1.0",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "ffmpeg": "0.0.4",
+    "fs": "0.0.1-security",
+    "hypixel": "^1.0.3",
+    "json": "^9.0.6",
+    "jsonstore.io": "^1.1.0",
+    "math.js": "^1.1.45",
+    "morgan": "^1.9.1",
+    "nitrotype": "^1.0.0",
+    "node-opus": "^0.3.3",
+    "pug": "^2.0.4",
+    "request": "^2.88.0",
+    "survivio": "^1.0.5",
+    "util": "^0.12.1",
+    "ytdl-core": "^1.0.7"
+  }
+}
