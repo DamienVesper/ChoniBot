@@ -2,8 +2,9 @@ const Discord = require(`discord.js`);
 const Math = require(`math.js`);
 const { config, client } = require(`./index.js`);
 const fs = require(`fs`);
-const jsonstore = require(`jsonstore.io`);
-let store = new jsonstore(config.jsonstoreToken);
+
+let store = {}
+client.api.store = store;
 
 module.exports = {
     cleanse: {
@@ -27,7 +28,6 @@ module.exports = {
             let restoreData = {}
             fs.readFile(filePath, `utf-8`, (err, data) => {
                 if(err) return console.error(err);
-                store.write(`logs`, JSON.parse(data));
                 console.log(`Succesfully restored data from file.`);
             });
         }
@@ -47,5 +47,6 @@ module.exports = {
         update: async() => {
 
         }
-    }
+    },
+    store: store
 }

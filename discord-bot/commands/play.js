@@ -1,9 +1,7 @@
 const Discord = require(`discord.js`);
 const Math = require(`math.js`);
-const jsonstore = require(`jsonstore.io`);
-const ytdl = require(`ytdl-core`);
-const { api, bus, config } = require(`../index.js`);
-let store = new jsonstore(config.jsonstoreToken);
+const { config } = require(`../index.js`);
+let store = client.api.store;
 
 module.exports = {
     name: `play`,

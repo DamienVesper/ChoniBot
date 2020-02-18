@@ -4,8 +4,8 @@ const { config } = require(`../index.js`);
 let store = client.api.store;
 
 module.exports = {
-    name: `_template`,
-    description: ``,
+    name: `leaderboard`,
+    description: `View leaderboards!`,
     aliases: [],
     usage: `<required> [not]`,
 }

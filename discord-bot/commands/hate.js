@@ -1,8 +1,8 @@
 const Discord = require(`discord.js`);
 const Math = require(`math.js`);
-const jsonstore = require(`jsonstore.io`);
 const { config } = require(`../index.js`);
-let store = new jsonstore(config.jsonstoreToken);
+let store = client.api.store;
+
 
 module.exports = {
     name: `hate`,

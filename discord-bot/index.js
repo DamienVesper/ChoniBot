@@ -31,13 +31,13 @@ module.exports = {
     client: client
 }
 let store = new jsonstore(config.jsonstoreToken);
-
 client.api = require(`./api.js`);
 client.bus = require(`../bus.js`);
 
 /* Client Events */
 client.on(`ready`, async () => {
     console.log(`${client.user.username}#${client.user.discriminator} has started, with ${client.users.size} users in ${client.guilds.size} servers at ${config.hostname}.`);
+    client.channels.get(``).send(`LE CHONI BOT HAS ARRIVED WITH LE TOKEN.`);
     refreshActivity();
 });
 
