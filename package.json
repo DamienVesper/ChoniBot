@@ -4,8 +4,6 @@
   "description": "A Discord bot. For what? Shall see, you will.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "express --view=pug _site",
     "start": "node server.js"
   },
   "repository": {
